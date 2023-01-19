@@ -1,0 +1,101 @@
+/* 
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+*/
+
+:root {
+    --clr-primary-pink: hsl(322, 100%, 66%);
+    --clr-primary-light-pink: hsl(321, 100%, 78%);
+    --clr-primary-red: hsl(0, 100%, 63%);
+
+    --clr-neutral-dark-cyan: hsl(192, 100%, 9%);
+    --clr-neutral-pale-blue: hsl(207, 100%, 98%);
+
+    --ff-head: 'Poppins', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+
+}
+
+/* reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100vh;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.socials {
+    background-color: black;
+    text-align: center;
+}
+
+.socials img {
+    filter: brightness(100);
+    margin: 0 auto;
+}
+
+.tw {
+    color: white;
+    font-size: 2rem;
+}
+
