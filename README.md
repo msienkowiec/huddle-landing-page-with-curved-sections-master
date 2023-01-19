@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/msienkowiec/huddle-landing-page-with-curced-sections-master)
-- Live Site URL: [live](https://msienkowiec.github.io/huddle-landing-page-with-curced-sections-master/)
+- Solution URL: [github](https://github.com/msienkowiec/huddle-landing-page-with-curved-sections-master)
+- Live Site URL: [live](https://msienkowiec.github.io/huddle-landing-page-with-curved-sections-master/)
 
 ### Built with
 
