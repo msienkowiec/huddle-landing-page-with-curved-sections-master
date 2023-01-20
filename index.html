@@ -15,15 +15,17 @@
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
 <body>
-  <div class="container">
+  <div class="flex-container">
     <a href="#"><img src="./images/logo.svg" alt="Huddle home"></a>
     <a href="#" class="button btn-trial">Try it free</a>
   </div>
   
-  <header>
+  <header class="header">
     <h1>Build The Community Your Fans Will Love</h1>
     <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-    <a href="#" class="button btn-body">Get Started For Free</a>
+    <div class="btn-container">
+      <a href="#" class="button btn-body">Get Started For Free</a>
+    </div>
     <img src="./images/screen-mockups.svg" alt="screen mockups">
   </header>
   
@@ -34,73 +36,104 @@
         <h2>1.4k+</h2>
         <p>Communities Formed</p>
       </div>
-      <div class="Messages">
+      <div class="messages">
         <img src="./images/icon-messages.svg" alt="" aria-hidden="true">
         <h2>2.7m+</h2>
         <p>Messages Sent</p>
       </div>
     </section>
 
-    <section class="pad-w" aria-labelledby="hd1">
-      <header id="hd1">
-        <h2>Grow Together</h2>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
-      </header>
-      <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+    <section aria-labelledby="hd1">
+      <picture>
+        <source srcset="" media="(min-width: 1000px)">
+        <img src="./images/bg-section-top-mobile-1.svg" alt="" aria-hidden="true">
+      </picture>      
+      <div class="content">
+        <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+        <header id="hd1">
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+        </header>
+      </div>
+      <picture>
+        <source srcset="" media="(min-width: 1000px)">
+        <img src="./images/bg-section-bottom-mobile-1.svg" alt="" aria-hidden="true">
+      </picture>
     </section> 
 
-    <section class="pad-w" aria-labelledby="hd2">
-      <header id="hd2">
-        <h2>Flowing Conversations</h2>
-        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
-      </header>
-      <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+    <section aria-labelledby="hd2">
+      <div class="content">
+        <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+        <header id="hd2">
+          <h2>Flowing Conversations</h2>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+        </header>
+      </div>
     </section>
 
-    <section class="pad-w" aria-labelledby="hd3">
-      <header id="hd3">
+    <section aria-labelledby="hd3">
+      <picture>
+        <source srcset="" media="(min-width: 1000px)">
+        <img src="./images/bg-section-top-mobile-2.svg" alt="" aria-hidden="true">
+      </picture>
+      <div class="content">
+        <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+        <header id="hd3">
         <h2>Your Users</h2>
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
-      </header>
-      <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+        </header>
+      </div>
+      <picture>
+        <source srcset="" media="(min-width: 1000px)">
+        <img src="./images/bg-section-bottom-mobile-2.svg" alt="" aria-hidden="true">
+      </picture>
     </section>
 
     <section class="community-build" aria-labelledby="hd4">
       <h2 id="hd4">Ready To Build Your Community?</h2>
-      <a href="#" class="button btn-body">Get Started For Free</a>
+      <div class="btn-container">
+        <a href="#" class="button btn-body">Get Started For Free</a>
+      </div>
     </section>
   </main>  
 
   <footer>
-    <div>
-      <a href="#"><img src="./images/logo.svg" alt="Huddle home"></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
-      <address>
-        <div class="phone-number">
-          <img src="./images/icon-phone.svg" alt="" aria-hidden="true">
-          <p>Phone: +1-543-123-4567</p>
-        </div>
-        <div class="email">
-          <img src="./images/icon-email.svg" alt="" aria-hidden="true">
-          <p>example@huddle.com</p>
-        </div>       
-      </address>
-      <div class="socials">
-        <a href="#" class="fb"><img src="./images/icon-facebook.svg" alt="facebook"></a>
-        <a href="#" class="insta">
-          <img src="./images/icon-instagram.svg" alt="instagram">
-        </a>
-        <a href="#" class="tw" aria-label="twitter"><i class="fa-brands fa-square-twitter"></i></a>
-      </div>
-    </div>
+    <picture>
+      <source srcset="./images/bg-footer-top-desktop.svg" media="(min-width: 1000px)">
+      <img src="./images/bg-footer-top-mobile.svg" alt="" aria-hidden="true">
+    </picture>
 
-    <div class="newsletter">
-      <h2>Newsletter</h2>
-      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-      <form action="#">
-        <input type="email" name="email" id="email">
-        <input class="btn-sub" type="submit" value="Subscribe">
-      </form>      
+    <div class="footer-content">
+      <div class="contact">
+        <a href="#" class="footer-logo"><img src="./images/logo.svg" alt="Huddle home"></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        <address>
+          <div class="phone-number">
+            <img src="./images/icon-phone.svg" alt="" aria-hidden="true">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="email">
+            <img src="./images/icon-email.svg" alt="" aria-hidden="true">
+            <p>example@huddle.com</p>
+          </div>
+        </address>
+        <div class="socials">
+          <a href="#" class="fb"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#" class="insta">
+            <img src="./images/icon-instagram.svg" alt="instagram">
+          </a>
+          <a href="#" class="tw" aria-label="twitter"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+        <form action="#">
+          <input type="email" name="email" id="email">
+          <input class="btn-sub" type="submit" value="Subscribe">
+        </form>
+      </div>
     </div>
   </footer>  
 </body>
