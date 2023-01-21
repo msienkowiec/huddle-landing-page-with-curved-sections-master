@@ -17,14 +17,14 @@
 <body>
   <div class="flex-container">
     <a href="#"><img src="./images/logo.svg" alt="Huddle home"></a>
-    <a href="#" class="button btn-trial">Try it free</a>
+    <a href="#" class="btn-trial">Try it free</a>
   </div>
   
   <header class="header">
     <h1>Build The Community Your Fans Will Love</h1>
     <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
     <div class="btn-container">
-      <a href="#" class="button btn-body">Get Started For Free</a>
+      <a href="#" class="btn-body">Get Started For Free</a>
     </div>
     <img src="./images/screen-mockups.svg" alt="screen mockups">
   </header>
@@ -45,25 +45,31 @@
 
     <section aria-labelledby="hd1">
       <picture>
-        <source srcset="" media="(min-width: 1000px)">
+        <source srcset="./images/bg-section-top-desktop-1.svg" media="(min-width: 1000px)">
         <img src="./images/bg-section-top-mobile-1.svg" alt="" aria-hidden="true">
       </picture>      
       <div class="content">
-        <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+        <div class="img-container">
+          <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+        </div>
+        
         <header id="hd1">
           <h2>Grow Together</h2>
           <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
         </header>
       </div>
       <picture>
-        <source srcset="" media="(min-width: 1000px)">
+        <source srcset="./images/bg-section-bottom-desktop-1.svg" media="(min-width: 1000px)">
         <img src="./images/bg-section-bottom-mobile-1.svg" alt="" aria-hidden="true">
       </picture>
     </section> 
 
     <section aria-labelledby="hd2">
       <div class="content">
-        <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+        <div class="img-container">
+          <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+        </div>
+
         <header id="hd2">
           <h2>Flowing Conversations</h2>
           <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
@@ -77,9 +83,12 @@
         <img src="./images/bg-section-top-mobile-2.svg" alt="" aria-hidden="true">
       </picture>
       <div class="content">
-        <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+        <div class="img-container">
+          <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+        </div>
+
         <header id="hd3">
-        <h2>Your Users</h2>
+          <h2>Your Users</h2>
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
         </header>
       </div>
@@ -92,7 +101,7 @@
     <section class="community-build" aria-labelledby="hd4">
       <h2 id="hd4">Ready To Build Your Community?</h2>
       <div class="btn-container">
-        <a href="#" class="button btn-body">Get Started For Free</a>
+        <a href="#" class="btn-body">Get Started For Free</a>
       </div>
     </section>
   </main>  
@@ -129,8 +138,8 @@
       <div class="newsletter">
         <h2>Newsletter</h2>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-        <form action="#">
-          <input type="email" name="email" id="email">
+        <form action="">
+          <input type="email" name="email" id="email" >
           <input class="btn-sub" type="submit" value="Subscribe">
         </form>
       </div>

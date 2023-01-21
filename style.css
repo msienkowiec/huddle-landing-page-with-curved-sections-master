@@ -23,6 +23,8 @@
     --ff-head: 'Poppins', sans-serif; /* 700 */
     --ff-body: 'Open Sans', sans-serif; /* 400, 600, 700 */
 
+    --fs-p: .875rem;
+
     --fw-regular: 400;
     --fw-semiBold: 600;
     --fw-bold: 700;
@@ -88,11 +90,27 @@ picture > * {
 
 /* utilities */
 
-
 /* button */
 .btn-container {
     display: flex;
     justify-content: center;
+}
+
+.btn-trial {
+    color: var(--clr-primary-pink);
+    font-size: .625rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+
+    padding: 0.25em 1.5em;
+    border: 1px solid var(--clr-primary-pink);
+    border-radius: 2rem;
+}
+
+.btn-trial:hover {
+    border-color: var(--clr-primary-light-pink);
+    color: var(--clr-primary-light-pink);
+    cursor: pointer;
 }
 
 .btn-body {
@@ -104,6 +122,23 @@ picture > * {
     background-color: var(--clr-primary-pink);
     border-radius: 2rem;    
 }
+
+.btn-sub {
+    margin-right: auto;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-primary-pink);
+    padding: .75em 2.5em;
+}
+
+.btn-body:hover, .btn-sub:hover {
+    background-color: var(--clr-primary-light-pink);
+    cursor: pointer;
+}
+
+
 
 /* page layout */
 
@@ -121,19 +156,6 @@ picture > * {
     height: auto;
 }
 
-.flex-container .btn-trial {
-    color: var(--clr-primary-light-pink);
-    font-size: 10px;
-    white-space: nowrap;
-    text-transform: capitalize;
-
-    padding: 0.25em 1.5em;
-    border: 1px solid var(--clr-primary-light-pink);
-    border-radius: 2rem; 
-    display: flex;
-    justify-content: flex-end;
-}
-
 /* header */
 
 .header {
@@ -146,7 +168,7 @@ h1 {
 }
 
 .header > p {
-    font-size: .875rem;
+    font-size: var(--fs-p);
     font-weight: var(--fw-semiBold);
     color: var(--clr-neutral-dark-cyan);
     text-align: center;
@@ -161,7 +183,7 @@ h1 {
 /* main */
 
 section p {
-    font-size: .875rem;
+    font-size: var(--fs-p);
     font-weight: var(--fw-semiBold);
     color: var(--clr-neutral-dark-cyan);
     text-align: center;
@@ -178,34 +200,19 @@ section:first-child {
     margin: 7.5rem 5rem 0;
 }
 
-section:first-child p {
-    opacity: .5;
-}
-
-.communities img {
+section:first-child img {
     max-width: 1.75rem;
 }
 
-.communities h2 {
+section:first-child h2 {
     font-family: var(--ff-body);
     font-size: 3.75rem;
     line-height: 1.4;
     text-align: center;
 }
 
-.communities p {
-    margin: 0.5em;
-}
-
-.messages img {
-    max-width: 1.5rem;
-}
-
-.messages h2 {
-    font-family: var(--ff-body);
-    font-size: 3.5em;
-    line-height: 1.4;
-    text-align: center;
+section:first-child p {
+    opacity: .5;
 }
 
 .messages p {
@@ -219,7 +226,7 @@ section:nth-child(4) .content {
     background-color: var(--clr-neutral-pale-blue);
 }
 
-.content > img {
+.content > .img-container {
     padding: 5rem 3.75rem;
 }
 
@@ -236,7 +243,7 @@ section:nth-child(4) .content {
     padding: 1rem 0;
 }
 
-section:nth-child(4) .content img {
+section:nth-child(4) .content .img-container {
     padding-top: 1.5rem;
 }
 
@@ -250,7 +257,7 @@ section:nth-child(3) {
     padding-bottom: 7rem;
 }
 
-section:nth-child(3) img {
+section:nth-child(3) .img-container {
     padding: 9rem 3.5rem 6rem;
 }
 
@@ -270,16 +277,43 @@ section:nth-child(3) img {
 .footer-content {
     display: flex;
     flex-direction: column-reverse;
+    gap: 4rem;
 
     color: white;
     background-color: var(--clr-neutral-dark-cyan);
 }
 
-.footer-logo {
-    filter: brightness(0) invert(1);
+/* contact */
+
+.contact, .newsletter {
+    padding: 3rem 1.75rem 2rem ;
 }
 
+.contact .footer-logo > img {
+    filter: brightness(0) invert(1);
+    width: 12rem;
+}
 
+.contact > p {
+    font-size: var(--fs-p);
+    margin: 1rem 0 2.5rem;
+}
+
+.phone-number, .email {
+    display: flex;
+    gap: 1.5rem;
+    font-size: var(--fs-p);
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2.5rem;
+}
 
 .socials img {
     filter: brightness(100);
@@ -287,15 +321,187 @@ section:nth-child(3) img {
 
 .tw {
     color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
+.tw:hover {
+    color: cyan;
+}
 
+/* newsletter */
 
-.footer-content h2 {
+.newsletter h2 {
+    font-family: var(--ff-body);
+    font-size: 1.25rem;
     color: white;
+    text-transform: uppercase;
+    font-weight: var(--fw-semiBold);
 }
 
+.newsletter > p {
+    font-size: var(--fs-p);
+    margin: 1rem 0 2rem;
+}
+
+.newsletter form {
+    text-align: right;
+}
+
+.newsletter input:first-child {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1000px) {
+
+    :root {
+        --fs-p: 1.25rem;
+    }
+
+    /* button */
+    .btn-trial {
+        font-size: 1.125rem;
+    }
+
+    .btn-body {
+        font-size: 1.25rem;
+        
+        padding: 1.25em 5em;
+        border-radius: 3em;
+        box-shadow: 0px 8px 20px -15px black;    
+    }
+
+    .btn-sub {
+        margin-right: auto;
+        border: none;
+        border-radius: .5rem;
+        color: white;
+        font-weight: var(--fw-bold);
+        background-color: var(--clr-primary-pink);
+        padding: .75em 2.5em;
+    }
+
+    /* page layout */
+
+    /* top */
+
+    .flex-container {
+        margin: 5rem;
+    }
+
+    .flex-container img {
+        width: initial;
+    }
+
+    /* header */
+
+    .header {
+        margin: 14.5rem 12.5rem 8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .header > p {
+        margin-left: 14rem;
+        margin-right: 14rem;
+    }
+
+    .header > img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* main */
+
+    section p {
+        --fs-p: 1rem;
+        text-align: left;
+    }
+
+    /* section 1 */
+
+    section:first-child {
+        justify-content: space-evenly;
+    }
+
+    section:first-child img {
+        max-width: 3rem;
+    }
+
+    section:first-child h2 {
+        font-size: 6rem;
+    }
+
+    section:first-child p {
+        text-align: center;
+        font-size: 1.5rem;
+        opacity: .5;
+    }
+
+    .messages p {
+        padding: 0 4rem;
+    }
+
+    /* section 2, 4 */
+
+    section:nth-child(even) {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content > * {
+        flex: 1;
+    }
+
+    section:nth-child(even) .content {
+        flex-direction: row-reverse;
+        padding: 0 5rem;
+    }    
+
+    .content > .img-container {
+        padding: 3rem 4.5rem;
+    }
+
+    .content > header {
+        padding: 0 2rem;
+        align-self: center;
+    }
+
+    .content > header h2 {
+        text-align: left;
+        font-size: 2.5em;
+    }
+
+    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .newsletter input:first-child {
+        max-width: 20rem;
+    }
+}
