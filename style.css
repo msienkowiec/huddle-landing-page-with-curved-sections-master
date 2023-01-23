@@ -1,17 +1,3 @@
-/* 
-## Typography
-
-### Headings
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 700
-
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400, 600, 700
-*/
-
 :root {
     --clr-primary-pink: hsl(322, 100%, 66%);
     --clr-primary-light-pink: hsl(321, 100%, 78%);
@@ -89,6 +75,20 @@ picture > * {
 }
 
 /* utilities */
+
+.visually-hidden { 
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px); /* legacy browsers */
+    clip-path: inset(50%); /* modern browsers */
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
 
 /* button */
 .btn-container {
