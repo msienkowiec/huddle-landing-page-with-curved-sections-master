@@ -15,99 +15,102 @@
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
 <body>
-  <div class="flex-container">
-    <a href="#"><img src="./images/logo.svg" alt="Huddle home"></a>
-    <a href="#" class="btn-trial">Try it free</a>
-  </div>
-  
   <header class="header">
-    <h1>Build The Community Your Fans Will Love</h1>
-    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-    <div class="btn-container">
-      <a href="#" class="btn-body">Get Started For Free</a>
-    </div>
-    <img src="./images/screen-mockups.svg" alt="screen mockups">
-  </header>
+    <a href="#" class="header__logo-link">
+      <img class="header__logo" src="./images/logo.svg" alt="Huddle home">
+    </a>
+    <a href="#" class="btn--header">Try it free</a>
+  </header> 
   
   <main>
-    <section aria-label="comunity-activity">
+    
+    <section class="introduction">
+      <h1 class="introduction__title">Build The Community Your Fans Will Love</h1>
+      <p class="introduction__description">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+      <a href="#" class="btn-body">Get Started For Free</a>      
+      <img class="introduction__img" src="./images/screen-mockups.svg" alt="screen mockups">
+    </section>
+
+    <section class="community-activity" aria-label="community-activity">
       <div class="communities">
-        <img src="./images/icon-communities.svg" alt="" aria-hidden="true">
-        <h2>1.4k+</h2>
-        <p>Communities Formed</p>
+        <img class="communities__logo" src="./images/icon-communities.svg" alt="" aria-hidden="true">
+        <h2 class="communities__title">1.4k+</h2>
+        <p class="communities__subtitle">Communities Formed</p>
       </div>
       <div class="messages">
-        <img src="./images/icon-messages.svg" alt="" aria-hidden="true">
-        <h2>2.7m+</h2>
-        <p>Messages Sent</p>
+        <img class="messages___logo" src="./images/icon-messages.svg" alt="" aria-hidden="true">
+        <h2 class="messages__title">2.7m+</h2>
+        <p class="messages__subtitle">Messages Sent</p>
       </div>
     </section>
 
-    <section aria-labelledby="hd1">
-      <picture>
-        <source srcset="./images/bg-section-top-desktop-1.svg" media="(min-width: 1000px)">
-        <img src="./images/bg-section-top-mobile-1.svg" alt="" aria-hidden="true">
-      </picture>      
-      <div class="content">
-        <div class="img-container">
-          <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+    <section class="feature-section" aria-labelledby="features">
+
+      <h2 id="features" class="visually-hidden">Huddle Company features</h2>
+
+      <div class="feature">
+        <picture class="curve-separator">
+          <source srcset="./images/bg-section-top-desktop-1.svg" media="(min-width: 1000px)">
+          <img src="./images/bg-section-top-mobile-1.svg" alt="" aria-hidden="true">
+        </picture>
+        <div class="flex-container">
+          <div class="feature__picture">
+            <img src="./images/illustration-grow-together.svg" alt="" aria-hidden="true">
+          </div>      
+          <div class="feature__content">
+            <h2 class="feature__title">Grow Together</h2>
+            <p class="feature__description">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
         </div>
-        
-        <header id="hd1">
-          <h2>Grow Together</h2>
-          <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
-        </header>
+        <picture class="curve-separator">
+          <source srcset="./images/bg-section-bottom-desktop-1.svg" media="(min-width: 1000px)">
+          <img src="./images/bg-section-bottom-mobile-1.svg" alt="" aria-hidden="true">
+        </picture>
       </div>
-      <picture>
-        <source srcset="./images/bg-section-bottom-desktop-1.svg" media="(min-width: 1000px)">
-        <img src="./images/bg-section-bottom-mobile-1.svg" alt="" aria-hidden="true">
-      </picture>
-    </section> 
-
-    <section aria-labelledby="hd2">
-      <div class="content">
-        <div class="img-container">
-          <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+      
+      <div class="feature">
+        <div class="flex-container">
+          <div class="feature__picture">
+            <img src="./images/illustration-flowing-conversation.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="feature__content">
+            <h2 class="feature__title">Flowing Conversations</h2>
+            <p class="feature__description">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+          </div>
         </div>
-
-        <header id="hd2">
-          <h2>Flowing Conversations</h2>
-          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
-        </header>
       </div>
-    </section>
 
-    <section aria-labelledby="hd3">
-      <picture>
-        <source srcset="./images/bg-section-top-desktop-2.svg" media="(min-width: 1000px)">
-        <img src="./images/bg-section-top-mobile-2.svg" alt="" aria-hidden="true">
-      </picture>
-      <div class="content">
-        <div class="img-container">
-          <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+      <div class="feature">
+        <picture class="curve-separator">
+          <source srcset="./images/bg-section-top-desktop-2.svg" media="(min-width: 1000px)">
+          <img src="./images/bg-section-top-mobile-2.svg" alt="" aria-hidden="true">
+        </picture>
+        <div class="flex-container">
+          <div class="feature__picture">
+            <img src="./images/illustration-your-users.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="feature__content">
+            <h2 class="feature__title">Your Users</h2>
+            <p class="feature__description">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+          </div>
         </div>
-
-        <header id="hd3">
-          <h2>Your Users</h2>
-          <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
-        </header>
+        <picture class="curve-separator">
+          <source srcset="./images/bg-section-bottom-desktop-2.svg" media="(min-width: 1000px)">
+          <img src="./images/bg-section-bottom-mobile-2.svg" alt="" aria-hidden="true">
+        </picture>
       </div>
-      <picture>
-        <source srcset="./images/bg-section-bottom-desktop-2.svg" media="(min-width: 1000px)">
-        <img src="./images/bg-section-bottom-mobile-2.svg" alt="" aria-hidden="true">
-      </picture>
+
     </section>
 
-    <section class="community-build" aria-labelledby="hd4">
-      <h2 id="hd4">Ready To Build Your Community?</h2>
-      <div class="btn-container">
-        <a href="#" class="btn-body">Get Started For Free</a>
-      </div>
+    <section class="community-build" aria-label="community-build">
+      <h2 class="community-build__title">Ready To Build Your Community?</h2>
+      <a href="#" class="btn-body">Get Started For Free</a>
     </section>
+
   </main>  
 
   <footer>
-    <picture>
+    <picture class="curve-separator">
       <source srcset="./images/bg-footer-top-desktop.svg" media="(min-width: 1000px)">
       <img src="./images/bg-footer-top-mobile.svg" alt="" aria-hidden="true">
     </picture>
