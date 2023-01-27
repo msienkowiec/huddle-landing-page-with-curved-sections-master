@@ -92,6 +92,7 @@ h1, h2 {
     white-space: nowrap;
     border: none;
     border-radius: 3rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn--header {
@@ -411,6 +412,8 @@ section p {
     }
 
     .introduction__description {
+        font-size: 1.25rem;
+
         margin-left: auto;
         margin-right: auto;
         max-width: 40rem;
